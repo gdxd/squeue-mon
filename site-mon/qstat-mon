@@ -1,0 +1,1 @@
+*/5 * * * *     qstat-mon       test -x /var/lib/qstat-mon/bin/monitor.sh && /var/lib/qstat-mon/bin/monitor.sh

@@ -1,0 +1,2 @@
+PATH=/sbin:/bin:/usr/sbin:/usr/bin
+*/5 * * * *     qstat-mon       test -x /var/lib/qstat-mon/squeuemon.sh && /var/lib/qstat-mon/squeuemon.sh 
