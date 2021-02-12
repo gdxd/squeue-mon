@@ -11,5 +11,7 @@ SCRIPT="/var/lib/qstat-mon/bin/parser-squeue.py"
 FILTER="/var/lib/qstat-mon/bin/isprint-filter"
 
 # timeout $TIMEOUT ssh $HOST '. /etc/profile.d/sge.sh; qstat -t -ext -u \* -xml' | $FILTER | $SCRIPT
-sleep 2
-timeout $TIMEOUT ssh $HOST cat /tmp/squeue.log | $SCRIPT
+#sleep 2
+#timeout $TIMEOUT ssh $HOST cat /tmp/squeue.log | $SCRIPT
+sleep 1
+timeout $TIMEOUT cat /lcg-lrz-ce3/qstat-mon/squeue.log | $SCRIPT
